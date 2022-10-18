@@ -1,0 +1,17 @@
+.login-form {
+  align-items: center;
+  text-align: center;
+  margin-top: 30vh;
+  background-color: #aacdea;
+  height: 30vh;
+  border-radius: 5px;
+}
+.select-container {
+  margin-bottom: 4vh;
+  padding-top: 9vh;
+}
+.select-container select {
+  width: 15vw;
+  height: 6vh;
+  background: rgb(233, 234, 235);
+}

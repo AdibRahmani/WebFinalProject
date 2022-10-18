@@ -1,0 +1,27 @@
+
+
+.hdesc-container {
+  margin-top: 1.5%;
+  margin-bottom: 0.5%;
+  width: 95.1vw;
+}
+.h-desc {
+  background-color: rgb(233, 234, 235);
+  border: none;
+  width: 100%;
+  height: 30vh;
+}
+.h-desc::placeholder {
+  padding-left: 10px;
+  padding-top: 70px;
+}
+/* .addBtn {
+  margin-top: 0.5%;
+  margin-bottom: 1.5%;
+  width: 100%;
+  height: 7vh;
+  color: white;
+  background-color: rgb(23, 117, 185);
+  border: none;
+  border-radius: 5px;
+} */

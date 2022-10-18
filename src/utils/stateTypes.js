@@ -1,0 +1,6 @@
+export const TODO = 'ToDo'
+export const INPROGRESS = 'InProgress'
+export const BLOCKED = 'Blocked'
+export const INQA = 'InQA'
+export const DONE = 'Done'
+export const DEPLOYED = 'Deployed'

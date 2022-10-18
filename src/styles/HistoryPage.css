@@ -1,0 +1,37 @@
+.main-div {
+  height: 100%;
+  margin: 0 auto;
+}
+.history-container {
+  background-color: #afd0f2;
+  border-radius: 5px;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  height: 8vh;
+  text-align: center;
+}
+.history-no {
+  text-align: center;
+  padding-top: 15vh;
+  font-size: 1.2em;
+}
+button {
+  width: 5vw;
+  height: 5vh;
+  color: white;
+  margin-right: 3vh;
+  margin-top: 3vh;
+  background-color: rgb(23, 117, 185);
+  border: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+button:hover {
+  background-color: rgb(70, 136, 184);
+}
+.button-container-div {
+  text-align: center;
+  /* height: 40vh;
+  width: 50vw; */
+}

@@ -1,0 +1,86 @@
+.edit-btn {
+  background-color: rgb(23, 117, 185);
+  color: white;
+  margin-right: 0.5%;
+  width: 47.2vw;
+  height: 8vh;
+  border-radius: 3px;
+  border: none;
+}
+.edit-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.cancel-btn {
+  background-color: white;
+  margin-left: 0.5%;
+  width: 47.2vw;
+  height: 8vh;
+  border-radius: 3px;
+  border: 1px solid rgb(200, 197, 197);
+  color: rgb(136, 135, 135);
+}
+.addBtn {
+  margin-top: 0.5%;
+  margin-bottom: 1.5%;
+  width: 100%;
+  height: 7vh;
+  color: white;
+  background-color: rgb(23, 117, 185);
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  padding-bottom: 4px;
+  align-items: center;
+}
+.addBtn svg {
+  width: 20px;
+  height: 20px;
+  /* margin-right: 15px; */
+}
+.addBtn:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(23, 117, 185) 0%,
+    rgb(92, 149, 189) 35%,
+    rgb(158, 177, 190) 100%
+  );
+}
+
+.edit-icon {
+  width: 3vw;
+  height: 5vh;
+  background-color: white;
+  border: none;
+}
+.edit-icon svg :hover {
+  fill: #afd0f2;
+}
+.edit-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.delete-icon {
+  width: 3vw;
+  height: 5vh;
+  background-color: white;
+  border: none;
+}
+.delete-icon svg :hover {
+  fill: #afd0f2;
+}
+.delete-icon svg {
+  width: 30px;
+  height: 30px;
+}
+.login-btn {
+  background-color: rgb(23, 117, 185);
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  color: white;
+  width: 5vw;
+  height: 5vh;
+}

@@ -1,0 +1,47 @@
+.td-container {
+  background-color: white;
+  width: 20vw;
+  height: 30vh;
+  border-radius: 5px;
+}
+.td-inner {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  height: 30vh;
+}
+.tasks-desc {
+  color: black;
+}
+.tasks-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+}
+/* .tasks-desc{
+
+} */
+.tasks-status {
+  background-color: rgb(23, 117, 185);
+  width: 6vw;
+  height: 4vh;
+  text-align: center;
+  border-radius: 3px;
+  float: left;
+  margin-top: 46px;
+}
+.tasks-status p {
+  color: white;
+  padding-top: 2px;
+  margin: 0 auto;
+}
+.edit-icon {
+  float: right;
+  margin-right: 5px;
+  margin-top: 46px;
+}
+.delete-icon {
+  float: right;
+  margin-right: 5px;
+  margin-top: 46px;
+}
