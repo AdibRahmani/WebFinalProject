@@ -22,7 +22,7 @@ const Login = () =>{
     }
 
     return (
-        <form onSubmit={(e)=>{handleLogIn(e)}}>
+        <form className='login-form' onSubmit={(e)=>{handleLogIn(e)}}>
             <div className='select-container'>
                 <select onChange={(e) => setUser(e.target.value)}>
                     <option value='admin'>Admin</option>

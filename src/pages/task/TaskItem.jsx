@@ -32,7 +32,7 @@ const TaskItem = ({task, setNeedReload}) => {
     }
 
     return (
-        <div className='td-container'>
+        <div className='grid-item'>
             <div className='td-inner'>
                 <p className='tasks-title'>{task.title}</p>
                 <p className='tasks-desc'>{task.description}</p>

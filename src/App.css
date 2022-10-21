@@ -1,7 +1,26 @@
+#root {
+  height: 100%;
+  margin: 0 auto;
+}
+body {
+  height: 100%;
+  margin: 0 auto;
+}
+html {
+  margin: 0 auto;
+}
 
 *{
   font-family: Arial, serif;
 }
+
+.App {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+
 header{
   color: #fff;
   background-color: #06448c;
@@ -53,14 +72,15 @@ header{
   font-size: 16px;
   resize: none;
 }
-#task-list{
-  border-radius: 4px;
-  background-color: #06448c;
-  color: #fff;
-  font-size: 16px;
-  width: 100%;
-  padding-bottom: inherit;
-}
+/*#task-list{*/
+/*  border-radius: 4px;*/
+/*  background-color: #06448c;*/
+/*  color: #fff;*/
+/*  font-size: 16px;*/
+/*  width: 100%;*/
+/*  !*padding-bottom: inherit;*!*/
+/*}*/
+
 span{
   display: block;
   padding: 25px 20px;
@@ -69,8 +89,9 @@ span{
   font-size: 16px;
   resize: none;
 }
+
 #items{
-  display: block;
+  display: flex;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   background-color: #607898;
@@ -78,7 +99,10 @@ span{
   font-size: 16px;
   text-align: center;
   width: 100%;
-  height: 100rem;
+  height: 80%;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .task{
@@ -284,17 +308,6 @@ body {
   padding-left: 10px;
   padding-top: 70px;
 }
-/* .addBtn {
-  margin-top: 0.5%;
-  margin-bottom: 1.5%;
-  width: 100%;
-  height: 7vh;
-  color: white;
-  background-color: rgb(23, 117, 185);
-  border: none;
-  border-radius: 5px;
-} */
-
 
 .login-form {
   align-items: center;
@@ -314,22 +327,23 @@ body {
   background: rgb(233, 234, 235);
 }
 
-.TaskPage {
+.task-list {
   margin: 0 auto;
   height: 100%;
+  background-color: rgb(53, 116, 180);
 }
 
 .t-head {
-  position: relative;
+  /*position: relative;*/
   width: 100%;
-  height: 610px;
+  height: 85px;
   border-top-right-radius: 28px;
   border-top-left-radius: 28px;
   background-color: #3574b4;
-  margin-top: 40px;
-  top: 50%;
+  /*top: 50%;*/
   margin: 0 auto;
 }
+
 .t-head-p {
   color: white;
   padding-left: 5%;
@@ -369,6 +383,16 @@ body {
 }
 .home-btn svg:hover {
   fill: #afd0f2;
+}
+
+.grid-item {
+  background-color: white;
+  width: 25vw;
+  margin: 5px;
+   height: 55vh;
+  border-radius: 5px;
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
 }
 
 
@@ -419,3 +443,34 @@ body {
   margin-right: 5px;
   margin-top: 46px;
 }
+
+.task-text {
+  margin-top: 1.5%;
+  margin-left: 2.2%;
+  margin-right: 2.2%;
+  margin-bottom: 1.5%;
+  font-weight: bold;
+  width: 20vw;
+  font-size: 1em;
+}
+
+.form {
+  margin-left: 2.2%;
+  margin-right: 2.2%;
+}
+.title-container {
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  width: 95.1vw;
+}
+
+.title {
+  background-color: rgb(233, 234, 235);
+  border: none;
+  width: 100%;
+  height: 8vh;
+}
+.title::placeholder {
+  padding-left: 10px;
+}
+

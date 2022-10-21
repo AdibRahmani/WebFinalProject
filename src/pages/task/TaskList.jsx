@@ -6,7 +6,7 @@ const axios = require('axios').default;
 
 
 const TaskList = () => {
-    const person = useSelector((state)=>
+    const person = useSelector((state) =>
         state.person
     )
 
@@ -28,18 +28,21 @@ const TaskList = () => {
     }, [needReload])
 
     return (
-        <div id="task-list">
-            <span>Tasks</span>
+        <div className="task-list">
+
+            <div className='t-head'>
+                <span>Tasks</span>
+            </div>
+
             <div id="items">
-                {tasks && tasks.length > 0 ?(
+                {tasks && tasks.length > 0 ? (
                     tasks.map((task) => (<TaskItem key={task.id} task={task} setNeedReload={setNeedReload}/>))
-                ):(
+                ) : (
                     <pre>You have nothing to do.
                     Go get some sleep.</pre>
                 )
                 }
             </div>
-
         </div>
     )
 }
