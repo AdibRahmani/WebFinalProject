@@ -54,6 +54,9 @@ const HomePage = () => {
     return (
         <div id="home-page">
             <div className='t-head'>
+                <div className="title-h">
+                    <h2>Home</h2>
+                </div>
                 {person === 'User' ? (
                     <>
                         <button

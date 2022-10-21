@@ -28,8 +28,8 @@ const TaskList = ({needReload,setNeedReload}) => {
 
     return (
         <div className="task-list">
-            <div className="task-list-h">
-        <h2> Tasks</h2>
+            <div className="title-h">
+                <h2> Tasks</h2>
             </div>
             <div id="items">
                 {tasks && tasks.length > 0 ? (

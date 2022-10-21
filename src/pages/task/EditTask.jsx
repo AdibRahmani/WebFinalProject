@@ -100,7 +100,12 @@ const EditTask = () => {
 
     return (
         <>
-            <p className='task-text'>Edit Task</p>
+            <div className='t-head'>
+            <div className="title-h">
+                <h2>Edit Tasks</h2>
+            </div>
+            </div>
+            {/*<p className='task-text'>Edit Task</p>*/}
             <form className='form' onSubmit={(e) => handleSubmit(e)}>
                 {person === 'user' ? (
                     <>

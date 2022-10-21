@@ -40,7 +40,9 @@ const TaskItem = ({task, setNeedReload}) => {
                     <p>{task.status}</p>
                 </div>
                 {person === 'user' ? (
-                    <button
+                    <div className="grid-action">
+
+                    <button>
                         className='edit-icon'
                         type='button'
                         onClick={() =>
@@ -52,12 +54,13 @@ const TaskItem = ({task, setNeedReload}) => {
                                     status: task.status,
                                 },
                             })
-                        }
-                    >
-                        <EditIcon fill='black' />
+                    }
+
+                        <EditIcon fill='black'/>
                     </button>
+                        </div>
                 ) : (
-                    <>
+                    <div className="grid-action">
                         <button
                             className='edit-icon'
                             type='button'
@@ -81,7 +84,7 @@ const TaskItem = ({task, setNeedReload}) => {
                         >
                             <TrashIcon fill='black' />
                         </button>
-                    </>
+                        </div>
                 )}
             </div>
         </div>
