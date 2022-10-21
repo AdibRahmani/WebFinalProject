@@ -1,18 +1,16 @@
 import TaskItem from "./TaskItem";
 import {useEffect, useState} from "react";
-import {useSelector} from "react-redux";
-import SignInIcon from "../../Icons/sign-solid";
-import HomeIcon from "../../Icons/home-solid";
-import {useNavigate} from "react-router-dom";
 
 const axios = require('axios').default;
 
 
-const TaskList = ({needReload,setNeedReload}) => {
+const TaskList = ({needReload, setNeedReload}) => {
 
     const [tasks, setTask] = useState([])
+    console.log("reload")
 
     useEffect(() => {
+        console.log("reload")
         axios({
             method: 'get',
             url: 'http://localhost:80/todo/read_all',

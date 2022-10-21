@@ -1,19 +1,19 @@
 import {useState} from "react";
 import {useDispatch} from "react-redux";
-import {adminLogin, userLogin} from "../redux/action/actions";
+import {adminLogin, userLogin} from "../../redux/action/actions";
 import {useNavigate} from 'react-router-dom'
 
-const Login = () =>{
-    const dispatch=useDispatch()
-    const navigate= useNavigate()
-    const [user,setUser]= useState('admin')
-    const handleLogIn = (e) =>{
+const Login = () => {
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+    const [user, setUser] = useState('admin')
+    const handleLogIn = (e) => {
         e.preventDefault()
         console.log(user)
         if (user === 'admin') {
             console.log('admin')
             dispatch(adminLogin())
-            navigate('/taskList')
+            navigate('/homePage')
         } else {
             console.log('user')
             dispatch(userLogin())
@@ -22,7 +22,9 @@ const Login = () =>{
     }
 
     return (
-        <form className='login-form' onSubmit={(e)=>{handleLogIn(e)}}>
+        <form className='login-form' onSubmit={(e) => {
+            handleLogIn(e)
+        }}>
             <div className='select-container'>
                 <select onChange={(e) => setUser(e.target.value)}>
                     <option value='admin'>Admin</option>

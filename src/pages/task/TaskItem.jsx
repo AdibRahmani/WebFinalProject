@@ -6,15 +6,15 @@ import {useSelector} from "react-redux";
 
 
 const TaskItem = ({task, setNeedReload}) => {
-    const person = useSelector((state)=>
+    const person = useSelector((state) =>
         state.person
     )
 
     console.log(person)
-    const navigate= useNavigate()
-    const handleDelete= () => {
+    const navigate = useNavigate()
+    const handleDelete = () => {
         let formData = new FormData();
-        formData.append('id',task.id);
+        formData.append('id', task.id);
 
         axios({
             method: 'post',
@@ -23,8 +23,8 @@ const TaskItem = ({task, setNeedReload}) => {
         })
             .then(function (response) {
                 console.log(response);
-                setNeedReload(true)
-                navigate('/taskList')
+                setNeedReload(true);
+                // navigate('/taskList');
             })
             .catch(function (error) {
                 console.log(error);
@@ -42,23 +42,23 @@ const TaskItem = ({task, setNeedReload}) => {
                 {person === 'user' ? (
                     <div className="grid-action">
 
-                    <button
-                        className='edit-icon'
-                        type='button'
-                        onClick={() =>
-                            navigate('/editTask', {
-                                state: {
-                                    id: task.id,
-                                    title: task.title,
-                                    description: task.description,
-                                    status: task.status,
-                                },
-                            })
-                    }
-        >
-                        <EditIcon fill='black'/>
-                    </button>
-                        </div>
+                        <button
+                            className='edit-icon'
+                            type='button'
+                            onClick={() =>
+                                navigate('/editTask', {
+                                    state: {
+                                        id: task.id,
+                                        title: task.title,
+                                        description: task.description,
+                                        status: task.status,
+                                    },
+                                })
+                            }
+                        >
+                            <EditIcon fill='black'/>
+                        </button>
+                    </div>
                 ) : (
                     <>
                         <button
@@ -75,37 +75,20 @@ const TaskItem = ({task, setNeedReload}) => {
                                 })
                             }
                         >
-                            <EditIcon fill='black' />
+                            <EditIcon fill='black'/>
                         </button>
                         <button
                             className='delete-icon'
                             type='button'
                             onClick={(e) => handleDelete(e)}
                         >
-                            <TrashIcon fill='black' />
-                        </button>>
+                            <TrashIcon fill='black'/>
+                        </button>
+                        >
                     </>
-                        )}
+                )}
             </div>
         </div>
     )
-
-
-
-
-
-
-
-    //
-    // return(
-    //     <div className="task">
-    //         <h3>
-    //             {task.title}
-    //         </h3>
-    //         <p>{task.description}</p>
-    //         <p>{task.status}</p>
-    //     </div>
-    //
-    // )
 }
 export default TaskItem
