@@ -1,17 +1,16 @@
 import TaskItem from "./TaskItem";
 import {useEffect, useState} from "react";
 import {useSelector} from "react-redux";
+import SignInIcon from "../../Icons/sign-solid";
+import HomeIcon from "../../Icons/home-solid";
+import {useNavigate} from "react-router-dom";
 
 const axios = require('axios').default;
 
 
-const TaskList = () => {
-    const person = useSelector((state) =>
-        state.person
-    )
+const TaskList = ({needReload,setNeedReload}) => {
 
     const [tasks, setTask] = useState([])
-    const [needReload, setNeedReload] = useState(false)
 
     useEffect(() => {
         axios({
@@ -29,11 +28,9 @@ const TaskList = () => {
 
     return (
         <div className="task-list">
-
-            <div className='t-head'>
-                <span>Tasks</span>
+            <div className="task-list-h">
+        <h2> Tasks</h2>
             </div>
-
             <div id="items">
                 {tasks && tasks.length > 0 ? (
                     tasks.map((task) => (<TaskItem key={task.id} task={task} setNeedReload={setNeedReload}/>))
