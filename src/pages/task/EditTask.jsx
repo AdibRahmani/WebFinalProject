@@ -37,7 +37,7 @@ const EditTask = () => {
             })
                 .then(function (response) {
                     console.log(response);
-                    navigate('/taskList')
+                    navigate('/homePage')
                 })
                 .catch(function (error) {
                     console.log(error);
@@ -174,7 +174,7 @@ const EditTask = () => {
                 <button
                     type='button '
                     className='cancel-btn'
-                    onClick={() => navigate('/taskList')}
+                    onClick={() => navigate('/homePage')}
                 >
                     Cancel
                 </button>

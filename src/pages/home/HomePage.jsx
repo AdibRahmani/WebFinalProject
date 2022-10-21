@@ -53,19 +53,20 @@ const HomePage = () => {
 
     return (
         <div id="home-page">
+            <button
+                type='button'
+                className='home-btn'
+                onClick={() => navigate('/login')}
+            >
+                <SignInIcon/>
+            </button>
             { person ==='user'? (
                 <>
                 <div className='t-head'>
                     <div className="title-h">
                         <h2>Home</h2>
                     </div>
-                    <button
-                        type='button'
-                        className='home-btn'
-                        onClick={() => navigate('/login')}
-                    >
-                        <SignInIcon/>
-                    </button>
+
                 </div>
                 <div id="add-task">
                 <h3>Add a new Task</h3>
